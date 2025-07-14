@@ -65,7 +65,7 @@ int main() {
     text2.setFillColor(sf::Color::White);
     text2.setPosition(10.f,10.f);
 
-    while (window.isOpen()) {
+    while (window.isOpen() && health > 0) {
         sf::Event event;
 
         while (window.pollEvent(event)) {
